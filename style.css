@@ -1,0 +1,89 @@
+body {
+  font-weight: 400;
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background: hsl(0, 0%, 98%);
+}
+
+p {
+  color: hsl(0, 0%, 60%);
+}
+
+.light-h1 {
+  font-weight: 200;
+}
+
+.bold-h1 {
+  font-weight: 600;
+}
+
+header {
+  width: 50vw;
+  text-align: center;
+}
+
+article {
+  width: 90vw;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 5%;
+  grid-column-gap: 2%;
+}
+
+section {
+  box-shadow: 0px 3px 20px hsl(0, 0%, 85%);
+  padding: 5%;
+  background: white;
+  margin: 5% 0%;
+}
+
+.supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  grid-row: 2/4;
+  grid-column: 1/1;
+}
+
+.team-builder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+  grid-row: 1/3;
+  grid-column: 2/2;
+}
+
+.karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+  grid-row: 3/5;
+  grid-column: 2/2;
+}
+
+.calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  grid-row: 2/4;
+  grid-column: 3/3;
+}
+
+img {
+  margin-left: 65%;
+}
+
+@media (max-width: 415px) {
+
+  header,
+  article {
+    width: 80vw;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin-left: 75%;
+  }
+}
